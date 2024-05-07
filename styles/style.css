@@ -2,12 +2,18 @@
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
+body{
+    margin: 20px;
+}
 /* header and navigation styles */
 nav{
     margin: 50px 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.nav-ber{
+    color: #474747;
 }
 .nav-title{
     font-weight: 800;  
@@ -21,6 +27,16 @@ nav ul{
 nav li{
     margin: 50px;
     list-style: none;
+
+}
+nav ul li a{
+    text-decoration: none;    
+}
+nav ul li .nav-ber:hover{
+    background-color: aqua;   
+    color: black;
+    border-radius: 5px;
+    padding: 18px;
 
 }
 .text-primary{
@@ -77,8 +93,10 @@ nav li{
     border-radius: 5px;
     margin-left: 20px;
     padding: 18px 35px;
-
-
+}
+.btn-contact:hover{
+    background-color: aqua;
+    color: black;
 }
 /* main section */
 main{
@@ -180,12 +198,12 @@ main{
 .sub-title{
     margin-bottom: 20px;
     color: #757575;
-    font-weight: 600;
+    font-weight: 0;
     font-size: 20px;
 }
 .resume .description{
-    color: #757575;
-    font-size: 18px;
+    color: #474747;
+    font-size: 16px;
 }
 .batton-resume {
     margin-top: 50px;
@@ -193,11 +211,20 @@ main{
 }
 /* contact section */
 .contact{
+    margin-top: 25px;
     display: flex;
     gap: 100px;
     background: #FFF8F3;
     padding: 130px 200px;
 
+}
+.contract-section-icons{
+    margin-top: 20px;
+    justify-content: space-around;
+
+}
+.contract-section-icons a img{
+    margin-left: 20px;
 }
 .contact .section-title{
     text-align: left;
@@ -209,5 +236,11 @@ main{
     padding: 18px 30px;
 }
 input{
-    height: 64px;
+    height: 20px;
+    width: 100%;
+}
+.btn-primary:hover{
+    background-color: aqua;
+    color: black;
+    
 }
