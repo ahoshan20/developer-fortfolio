@@ -157,6 +157,9 @@ main{
 .what-i-do{
     margin-top: 130px;
     width: 100%;
+    padding: 30px;
+    background: #FFF8F3;
+
 
 }
 .what-i-do-title{
@@ -188,16 +191,19 @@ main{
 .resume .section-title{
     font-weight: 700;
     margin: 60px 0 ;
+    background: #FFF8F3;
+
 }
 .rsume-content{
     display: flex;
     gap: 24px;
+
 }
 .resume-item{
     margin: 30px 0px 30px 0px;
 
 }
-.resume-title{
+.education-container, .experience-container{
     color: #474747;
     font-weight: 700;
     font-size: 25px;
@@ -258,10 +264,18 @@ input{
     color: black;
     
 }
-@media screen and (max-width: 414px){
-    body{
-        background-color: #2b4b25
-    } 
+@media screen and (max-width: 576px){
+    /* responsive about me section */
+    .about{
+        padding: 30px;
+        margin: 30px;
+    }
+    .about-info-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* responsive what i do section */
     .skills-container{
         display: flex;
         gap: 24px;
@@ -277,5 +291,16 @@ input{
     }  
     .skill-title{
         text-align: center;
+    }
+    /* responsive resume section */
+    .rsume-content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 30px;
+    }
+    .resume-title, .resume-item{
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
